@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EK Wingo Pro Prediction App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EK Wingo Pro Prediction</h1>
+        <p>गेम टाइप चुनो और प्रेडिक्शन देखो!</p>
+        
+        <select id="gameType">
+            <option value="30">30 सेकंड Wingo</option>
+            <option value="60" selected>1 मिनट Wingo</option>
+            <option value="180">3 मिनट Wingo</option>
+            <option value="300">5 मिनट Wingo</option>
+            <option value="600">10 मिनट Wingo</option>
+        </select>
+        
+        <button onclick="startTimer()">शुरू करें</button>
+        
+        <div id="timer">टाइमर: --</div>
+        
+        <div class="color-circle" id="colorCircle">?</div>
+        
+        <div id="currentPrediction">
+            अगला प्रेडिक्शन: लोड हो रहा है...
+        </div>
+        
+        <h2>पिछली हिस्ट्री (आखिरी 20)</h2>
+        <div id="history"></div>
+        
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> ये ऐप सिर्फ एंटरटेनमेंट और रैंडम प्रेडिक्शन के लिए है। असली Wingo गेम पूरी तरह रैंडम है, कोई गारंटीड जीत नहीं। जुआ जोखिम भरा है, जिम्मेदारी से खेलें और पैसे गंवाने का रिस्क समझें। 18+ केवल।</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
